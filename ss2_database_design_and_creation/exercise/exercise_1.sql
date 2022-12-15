@@ -22,9 +22,14 @@ create table nha_cung_cap(
   ma_nha_cung_cap int primary key, 
   ten_nha_cung_cap varchar(50), 
   dia_chi varchar(50), 
-  so_dien_thoai varchar(20), 
   so_don_hang int, 
   foreign key (so_don_hang) references don_dat_hang(so_don_hang)
+);
+
+create table so_dien_thoai(
+  id int primary key auto_increment,
+  ma_nha_cung_cap int,
+  foreign key (ma_nha_cung_cap) references nha_cung_cap(ma_nha_cung_cap)
 );
 
 create table chi_tiet_phieu_xuat(
