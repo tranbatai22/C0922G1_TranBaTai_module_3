@@ -1,41 +1,39 @@
-CREATE DATABASE quan_li_sinh_vien;
-USE quan_li_sinh_vien;
+ create database quan_li_sinh_vien;
+use quan_li_sinh_vien;
 
-CREATE TABLE class
-(
-    class_id   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    class_name VARCHAR(60) NOT NULL,
-    start_date DATETIME    NOT NULL,
-    status    BIT
+create table class (
+  class_id int not null auto_increment primary key, 
+  class_name varchar(60) not null, 
+  start_date datetime not null, 
+  status bit
 );
 
-CREATE TABLE student
-(
-    student_id   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    student_name VARCHAR(30) NOT NULL,
-    address     VARCHAR(50),
-    phone       VARCHAR(20),
-    status      BIT,
-    class_id     INT         NOT NULL,
-    FOREIGN KEY (class_id) REFERENCES class (class_id)
+create table student (
+  student_id int not null auto_increment primary key, 
+  student_name varchar(30) not null, 
+  address varchar(50), 
+  phone varchar(20), 
+  status bit, 
+  class_id int not null, 
+  foreign key (class_id) references class (class_id)
 );
 
-CREATE TABLE subject
-(
-    sub_id   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    sub_name VARCHAR(30) NOT NULL,
-    credit  TINYINT     NOT NULL DEFAULT 1 CHECK ( credit >= 1 ),
-    status  BIT                  DEFAULT 1
+create table `subject` (
+  sub_id int not null auto_increment primary key, 
+  sub_name varchar(30) not null, 
+  credit tinyint not null default 1 check (credit >= 1), 
+  `status` bit default 1
 );
 
-CREATE TABLE mark
-(
-    mark_id    INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    sub_id     INT NOT NULL,
-    student_id INT NOT NULL,
-    mark      FLOAT   DEFAULT 0 CHECK ( mark BETWEEN 0 AND 100),
-    exam_times TINYINT DEFAULT 1,
-    UNIQUE (sub_id, student_id),
-    FOREIGN KEY (sub_id) REFERENCES Subject (sub_id),
-    FOREIGN KEY (student_id) REFERENCES student (student_id)
+create table mark (
+  mark_id int not null auto_increment primary key, 
+  sub_id int not null, 
+  student_id int not null, 
+  mark float default 0 check (
+    mark between 0 
+    and 100), 
+  exam_times tinyint default 1, 
+  unique (sub_id, student_id), 
+  foreign key (sub_id) references subject (sub_id), 
+  foreign key (student_id) references student (student_id)
 );
