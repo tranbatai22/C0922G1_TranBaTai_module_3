@@ -12,7 +12,7 @@ select
 from 
    Class
 where 
-   month(StartDate)=12;
+   month(start_date)=12;
 -- Hiển thị tất cả các thông tin môn học có credit trong khoảng từ 3-5.
 select 
   * 
