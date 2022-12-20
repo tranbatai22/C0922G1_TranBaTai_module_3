@@ -83,47 +83,55 @@ drop
   view v_product;
   
 -- Tạo store procedure lấy tất cả thông tin của tất cả các sản phẩm trong bảng product
-delimiter // create procedure sp_product () begin 
+delimiter //
+create procedure sp_product() begin 
 select 
   * 
 from 
-  products;
-end // delimiter;
+  product ;
+end //
+delimiter ;
 call sp_product();
 
 -- Tạo store procedure thêm một sản phẩm mới
-delimiter // create procedure sp_insert_product (
-  in product_code varchar(50), 
-  in product_name varchar(50), 
-  in product_price double, 
-  in product_amount int, 
-  in product_description varchar(50), 
-  in product_status varchar(50)
-) begin insert product (
-  product_code, product_name, product_price, 
-  product_amount, product_description, 
-  product_status
-) 
-values 
-  (
-    product_code, product_name, product_price, 
-    product_amount, product_description, 
-    product_status
-  );
-end // delimiter;
-call sp_insert_product(
-  'dt004', 'nokia', 6000, 4, 'ngon', 'tốt'
-);
-
--- Tạo store procedure sửa thông tin sản phẩm theo id
-delimiter // create procedure sp_update_product (
+delimiter //
+create procedure sp_insert_product (
   in product_id int, 
   in product_code varchar(50), 
   in product_name varchar(50), 
   in product_price double, 
   in product_amount int, 
   in product_description varchar(50), 
-  in product_status bit
+  in product_status varchar(50)
+) begin
+insert into product (
+product_id,
+  product_code, product_name, product_price, 
+  product_amount, product_description, 
+  product_status
+) 
+values 
+  (product_id,
+    product_code, product_name, product_price, 
+    product_amount, product_description, 
+    product_status
+  ) ;
+end //
+delimiter ;
+call sp_insert_product(
+ 8, 'dt004', 'nokia', 6000, 4, 'ngon', 'tốt'
+);
+
+-- Tạo store procedure sửa thông tin sản phẩm theo id
+delimiter //
+create procedure sp_update_product (
+  in product_id int, 
+  in product_code varchar(50), 
+  in product_name varchar(50), 
+  in product_price double, 
+  in product_amount int, 
+  in product_description varchar(50), 
+  in product_status varchar(50)
 ) begin 
 update 
   product 
@@ -135,19 +143,21 @@ set
   product_description = product_description, 
   product_status = product_status 
 where 
-  product_id = product_id;
-end // delimiter;
-call sp_update_product(
-  1, 'dt002', 'iphone', 2000, 2, 'ngon', 
-  'ổn'
-);
+  product_id = product_id ;
+end //
+delimiter ;
+
+call sp_update_product (1, 'dt002', 'iphone', 2000, 2, 'ngon', 'ok');
+call sp_product();
 
 -- Tạo store procedure xoá sản phẩm theo id
-delimiter // create procedure sp_delete_product (in product_id int) begin 
+delimiter //
+create procedure sp_delete_product (in product_id int) begin 
 delete from 
   product 
 where 
   product_id = product_id;
-end // delimiter;
-call sp_delete_product(3);
+end //
+delimiter ;
+call sp_delete_product(1);
 
