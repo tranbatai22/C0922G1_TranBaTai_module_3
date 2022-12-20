@@ -1,17 +1,17 @@
 use furama_resort;
-insert into vi_tri (ma_vi_tri, ten_vi_tri) 
+insert into vi_tri (ma_vi_tri, ten_vi_tri)
 values 
   (1, 'Quản Lý'), 
   (2, 'Nhân Viên');
   
-insert into trinh_do (ma_trinh_do, ten_trinh_do) 
+insert into trinh_do (ma_trinh_do, ten_trinh_do)
 values 
-  (1, 'Trung Cấp'), 
-  (2, 'Cao Đẳng'), 
-  (3, 'Đại Học'), 
+  (1, 'Trung Cấp'),
+  (2, 'Cao Đẳng'),
+  (3, 'Đại Học'),
   (4, 'Sau Đại Học');
   
-insert into bo_phan (ma_bo_phan, ten_bo_phan) 
+insert into bo_phan (ma_bo_phan, ten_bo_phan)
 values 
   (1, 'Sale-Marketing'), 
   (2, 'Hành chính'), 
@@ -23,7 +23,7 @@ insert into nhan_vien (
   luong, so_dien_thoai, email, dia_chi, 
   ma_vi_tri, ma_trinh_do, ma_bo_phan
 ) 
-values 
+values
   (
     1, 'Nguyễn Văn An', '1970-11-07', 
     456231786, 10000000, '0901234121', 
@@ -85,7 +85,7 @@ values
      2, 3, 2
   );
   
-insert into loai_khach (ma_loai_khach, ten_loai_khach) 
+insert into loai_khach (ma_loai_khach, ten_loai_khach)
 values 
   (1, 'Diamond'), 
   (2, 'Platinium'), 
@@ -94,11 +94,11 @@ values
   (5, 'Member');
   
 insert into khach_hang (
-  ma_khach_hang, ho_ten, ngay_sinh, 
-  gioi_tinh, so_cmnd, so_dien_thoai, 
+  ma_khach_hang, ho_ten, ngay_sinh,
+  gioi_tinh, so_cmnd, so_dien_thoai,
   email, dia_chi, ma_loai_khach
-) 
-values 
+)
+values
   (
     1, 'Nguyễn Thị Hào', '1970-11-07', 
     0, '643431213', '0945423362', 'thihao07@gmail.com', 

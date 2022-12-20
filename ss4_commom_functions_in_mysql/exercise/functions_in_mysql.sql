@@ -1,4 +1,4 @@
-use quan_li_sinh_vien;
+use student_management;
 
 --  Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất.
 select 
@@ -25,7 +25,7 @@ group by
   
 -- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần
 select 
-  s.*, 
+  s.*,
   avg(mark) as average 
 from 
   student s 

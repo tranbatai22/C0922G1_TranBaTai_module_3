@@ -1,5 +1,5 @@
- create database quan_li_sinh_vien;
-use quan_li_sinh_vien;
+ create database student_management;
+use student_management;
 
 create table class (
   class_id int not null auto_increment primary key, 

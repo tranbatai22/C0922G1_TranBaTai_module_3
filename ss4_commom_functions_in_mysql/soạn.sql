@@ -89,10 +89,10 @@ select name, birthday
 from instructor;
 
 -- 5.Lấy ra top 3 học viên có điểm cao nhất của trung tâm
--- select * from student 
--- group by student_id
--- having max(point)
--- limit 3;
+select name, point from student
+order by point desc
+limit 3;
+
 
 -- (select max(point) from student group by student_id )limit 3;
 -- 6.Lấy ra các học viên có điểm số là cao nhất của trung tâm.

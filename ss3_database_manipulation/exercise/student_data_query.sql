@@ -1,4 +1,4 @@
-use quan_li_sinh_vien;
+use student_management;
 -- Hiển thị tất cả các sinh viên có tên bắt đầu bảng ký tự ‘h’
 select 
   * 
@@ -7,12 +7,12 @@ from
 where 
   s.student_name like 'h%';
 -- Hiển thị các thông tin lớp học có thời gian bắt đầu vào tháng 12.
-select 
-  * 
+select
+  *
 from 
-  class c 
+   Class
 where 
-  c.start_date like '%12%';
+   month(StartDate)=12;
 -- Hiển thị tất cả các thông tin môn học có credit trong khoảng từ 3-5.
 select 
   * 
