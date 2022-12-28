@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
 </head>
 <body>
-<script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-
 <%@include file="include/header.jsp"%>
 
 <div class="row">
@@ -35,4 +33,5 @@
 </div>
 <%@include file="include/footer.jsp"%>
 </body>
+<script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </html>
