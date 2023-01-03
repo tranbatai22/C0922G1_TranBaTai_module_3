@@ -21,7 +21,7 @@
     text-align: justify;
     text-indent: 30px;
 }
-.format1{
+.class{
     color: white;
     text-align: center;
     text-decoration: underline;
@@ -39,7 +39,7 @@
 h3{
     padding-top: 10px;
 }
-.format2{
+.class1{
     color: blue;
     display: block;
     text-align: center;

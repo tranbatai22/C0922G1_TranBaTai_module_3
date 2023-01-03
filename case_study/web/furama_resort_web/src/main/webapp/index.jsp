@@ -26,7 +26,7 @@
   </div>
   <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
     <div class="row">
-      <img src="picture/body.jpg" height="450" width="800" alt="ảnh lỗi"/>
+      <img src="picture/body.jpg" class="vh-100" alt="ảnh lỗi"/>
       <p>THIS WORLD CLASS RESORT, FURAMA DANANG, REPUTABLE FOR BEING A CULINARY RESORT IN VIETNAM</p>
     </div>
   </div>

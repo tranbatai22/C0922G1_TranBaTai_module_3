@@ -24,17 +24,5 @@ public class DiscountServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String productDescription = request.getParameter("ProductDescription");
-        double listPrice = Double.parseDouble(request.getParameter("ListPrice"));
-        double discountPercent = Double.parseDouble(request.getParameter("DiscountPercent"));
-        double discountAmount = listPrice * discountPercent * 0.01;
-        double discountPrice = listPrice - discountAmount;
-        request.setAttribute("productDescription", productDescription);
-        request.setAttribute("listPrice", listPrice);
-        request.setAttribute("discountPercent", discountPercent);
-        request.setAttribute("discountAmount", discountAmount);
-        request.setAttribute("discountPrice", discountPrice);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("display.jsp");
-        requestDispatcher.forward(request, response);
     }
 }

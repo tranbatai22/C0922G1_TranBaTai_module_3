@@ -11,7 +11,7 @@
     <title>Product Discount Calculator</title>
 </head>
 <body>
-<form action="/calculate_discount" method="get">
+<form action="/calculate_discount" method="post">
     <p>Nhập mô tả sản phẩm</p>
     <input type="text" name="ProductDescription"><br>
     <p>Nhập giá sản phẩm</p>
