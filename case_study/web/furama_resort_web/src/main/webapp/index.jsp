@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
 </head>
 <body>
-<%@include file="include/header.jsp"%>
+<%@include file="view/include/header.jsp"%>
 
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
@@ -31,7 +31,7 @@
     </div>
   </div>
 </div>
-<%@include file="include/footer.jsp"%>
+<%@include file="view/include/footer.jsp"%>
 </body>
 <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </html>

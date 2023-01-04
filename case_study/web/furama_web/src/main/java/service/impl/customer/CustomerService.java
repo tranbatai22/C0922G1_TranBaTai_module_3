@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class CustomerService implements ICustomerService {
     ICustomerRepository customerRepository = new CustomerRepository();
-    private final Regex regex = new Regex();
+        private final Regex regex = new Regex();
 
     @Override
     public List<Customer> displayListCustomer() {

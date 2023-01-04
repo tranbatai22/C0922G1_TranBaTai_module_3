@@ -77,7 +77,7 @@ public class ProductServlet extends HttpServlet {
     }
 
     private void showList(HttpServletRequest request, HttpServletResponse response) {
-        List<Product> productList = productService.fidAll();
+        List<Product> productList = productService.findAll();
         request.setAttribute("productList", productList);
         try {
             request.getRequestDispatcher("view/product/list.jsp").forward(request, response);

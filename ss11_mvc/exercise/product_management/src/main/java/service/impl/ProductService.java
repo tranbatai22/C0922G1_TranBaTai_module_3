@@ -10,7 +10,7 @@ import java.util.List;
 public class ProductService implements IProductService {
     IProductRepository productRepository = new ProductRepository();
     @Override
-    public List<Product> fidAll() {
+    public List<Product> findAll() {
         return productRepository.findAll();
     }
 
