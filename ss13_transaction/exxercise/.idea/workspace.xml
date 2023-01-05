@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb42b2e6-1244-4eb3-8195-872a771a420e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/build/libs/manager_user-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/build/libs/manager_user-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/src/main/webapp/view/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/src/main/webapp/view/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/src/main/webapp/view/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/src/main/webapp/view/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/src/main/webapp/view/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc/exercise/manager_user/src/main/webapp/view/user/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2JtC9Fy2mC5n8cRq6hSPOM0jqiN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manager_user" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb42b2e6-1244-4eb3-8195-872a771a420e" name="Default Changelist" comment="" />
+      <created>1672887838443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672887838443</updated>
+      <workItem from="1672887839756" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1672887858296">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1672887858296" />
+  </component>
+</project>
