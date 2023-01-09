@@ -91,6 +91,8 @@ public class CustomerServlet extends HttpServlet {
         displayListCustomer(request, response);
     }
 
+
+
     private void insertCustomer(HttpServletRequest request, HttpServletResponse response) {
         int customer_type_id = Integer.parseInt(request.getParameter("customer_type_id"));
         String name = request.getParameter("name");

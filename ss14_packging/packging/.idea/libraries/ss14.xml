@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ss14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../src/ss14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
