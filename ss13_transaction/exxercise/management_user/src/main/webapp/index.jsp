@@ -12,6 +12,6 @@
     <title>$Title$</title>
 </head>
 <body>
-<c:redirect url="/user"></c:redirect>
+<c:redirect url="/PlayListServlet"></c:redirect>
 </body>
 </html>

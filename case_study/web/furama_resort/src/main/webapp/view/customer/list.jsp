@@ -10,8 +10,6 @@
 <html>
 <head>
     <title>List Customer </title>
-
-
     <link rel="stylesheet" href="../../bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../bootstrap-5.1.3-dist/css/styleWeb.css">
 
@@ -24,7 +22,7 @@
 <form class="d-flex" action="/customer?action=search" method="post">
     <input class="form-control me-2" type="search" placeholder="Search Name" aria-label="Search" name="name">
     <input class="form-control me-2" type="search" placeholder="Search Phone Number" aria-label="Search"
-           name="phone_number">
+           name="phoneNumber">
     <input class="form-control me-2" type="search" placeholder="Search Address" aria-label="Search" name="address">
     <button class="btn btn-outline-success" type="submit">Search</button>
 </form>
@@ -188,6 +186,7 @@
                             <input type="date" class="form-control bg-light " id="dateEdit" name="date_of_birth">
                         </div>
                     </div>
+
                     <div class="m-2 row">
                         <div class="col-sm-3">Gender</div>
                         <div class="col-sm-9">
@@ -200,12 +199,14 @@
                             </label> Nữ
                         </div>
                     </div>
+
                     <div class="m-2 row">
                         <label for="idCardEdit" class="col-sm-3 col-form-label">ID Card</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control bg-light " id="idCardEdit" name="id_card">
                         </div>
                     </div>
+
                     <div class="m-2 row">
                         <label for="phoneNumberEdit" class="col-sm-3 col-form-label">Phone Number</label>
                         <div class="col-sm-9">

@@ -20,8 +20,8 @@ public class CustomerRepository implements ICustomerRepository {
     private final String SQL_SAFE_UPDATES = "set sql_safe_updates = 0;";
     private final String FOREIGN_KEY_CHECKS = "set foreign_key_checks = 0;";
     private static final  String  EDIT_CUSTOMER = "update customer set customer_type_id = ?,name=?,date_of_birth=?,gender=?,id_card=?,phone_number=?,email=?,address=? where id = ?;";
-    private final String FIND_CUSTOMER_BY_NAME = "select c.*,ct.name as customer_type_name from customer c join customer_type ct on c.customer_type_id = ct.id where c.name like ? and c.phone_number like ? and c.address like ?";
-
+    private final String FIND_CUSTOMER_BY_NAME = "select c.*,ct.name from customer c join customer_type ct on c.customer_type_id = ct.id where c.name like ? and c.phone_number like ? and c.address like ?;";
+    private final String INSERT_INTO = "insert into student (name,gender,email,address, student_type_id) value (?,?,?,?,?)";
     @Override
     public List<Customer> displayCustomer() {
         List<Customer> customerList = new ArrayList<>();
@@ -120,15 +120,15 @@ public class CustomerRepository implements ICustomerRepository {
         Connection connection = baseRepository.getConnection();
         List<Customer> customerList = new ArrayList<>();
         try {
-            PreparedStatement ps =connection.prepareStatement(FIND_CUSTOMER_BY_NAME);
-            ps.setString(1,"%"+customerName+"%");
-            ps.setString(2,"%"+customerPhoneNumber+"%");
-            ps.setString(3,"%"+customerAddress+"%");
-            ResultSet rs = ps.executeQuery();
+            PreparedStatement preparedStatement =connection.prepareStatement(FIND_CUSTOMER_BY_NAME);
+            preparedStatement.setString(1,"%"+customerName+"%");
+            preparedStatement.setString(2,"%"+customerPhoneNumber+"%");
+            preparedStatement.setString(3,"%"+customerAddress+"%");
+            ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){
                 int id = rs.getInt("id");
                 int customerTypeId = rs.getInt("customer_type_id");
-                String customerTypeName = rs.getString("customer_type_name");
+                String customerTypeName = rs.getString("name");
                 String name = rs.getString("name");
                 String dateOfBirth = rs.getString("date_of_birth");
                 boolean gender = rs.getBoolean("gender");
